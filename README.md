@@ -6,7 +6,7 @@ Please setup your mongodb connection according to the working enviroments.
 - PORT=
 - MONGO_URI=
 - NODE_ENV= development
-- JWT_SECRET=
+- JWT_SECRET= Please enter your JWT secret password
 
 
 ## The File structure
@@ -15,6 +15,10 @@ Please setup your mongodb connection according to the working enviroments.
 
 
 ## Available Scripts
+
+To run the front end seperately
+### `cd front-end
+npm start`
 
 In the project directory, you can run:
 
