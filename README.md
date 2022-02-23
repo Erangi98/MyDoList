@@ -18,7 +18,12 @@ Please setup your mongodb connection according to the working enviroments.
 
 To run the front end seperately
 ### `cd front-end`
-###`npm start`
+### `npm start`
+
+To run the back end seperately
+### `cd back-end`
+### `npm start`
+
 
 In the project directory, you can run:
 
