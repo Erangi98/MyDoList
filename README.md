@@ -10,9 +10,9 @@ Please setup your mongodb connection according to the working enviroments.
 
 Since this project will hold both the client application and the server application there will be node modules in two different places. Enter below commands to get started.
 
-npm i(in root directory) 
-cd frontend
-npm i 
+  npm i(in root directory) 
+  cd frontend
+  npm i 
 
 ## The File structure
 #### `client` - Holds the client application
