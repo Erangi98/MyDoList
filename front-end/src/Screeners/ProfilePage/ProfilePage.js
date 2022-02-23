@@ -36,9 +36,11 @@ const ProfilePage = ({location, history}) => {
         e.preventDefault();
 
        if( userpassword === confirmpassword){
-           dispatch(updateProfile({ username, useremail, userpassword}));
+           setmessage("Error passwords are not matching");
+           
        } else{
-        setmessage("Error passwords are not matching");
+        dispatch(updateProfile({ username, useremail, userpassword}));
+        setmessage("Updated Successfully!");
        }
             
     };
@@ -52,11 +54,11 @@ const ProfilePage = ({location, history}) => {
                 {loading && <Loading />}
                 {success && (
                     <ErrorMessage variant="success">
-                        Successfully Updated
+                        {message}
                     </ErrorMessage>
                 )}
                 {error && <ErrorMessage varient="danger">{error}</ErrorMessage>}
-                {message && <ErrorMessage variant="danger">{message}</ErrorMessage>}
+                {message && <ErrorMessage variant="success">{message}</ErrorMessage>}
                 <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
                     <Form.Control 
