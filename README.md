@@ -17,8 +17,8 @@ Please setup your mongodb connection according to the working enviroments.
 ## Available Scripts
 
 To run the front end seperately
-### `cd front-end
-npm start`
+### `cd front-end`
+###`npm start`
 
 In the project directory, you can run:
 
